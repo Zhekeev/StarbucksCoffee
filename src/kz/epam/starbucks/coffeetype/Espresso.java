@@ -1,30 +1,20 @@
 package kz.epam.starbucks.coffeetype;
 
-import kz.epam.starbucks.service.CoffeeMachine;
-
-public class Espresso extends CoffeeMachine {
+public class Espresso {
     public final int ESPRESSO_PRICE_IN_TENGE = 1200;
-    private final int hotWaterForEspresso = hotWaterInMilliliters - 965;
-    private final int groundCoffeBeansForEspresso = groundCoffeeBeansInGramms -  56;
+    private final int HOT_WATER_FOR_ESPRESSO_IN_ML = 35;
+    private final int GROUND_COFFEE_BEANS_FOR_ESPRESSO_IN_GR = 56;
 
     public void EspressoCoffee(){
         System.out.println("Вы выбрали эспрессо");
         System.out.println("");
-        makeCoffee();
-        eventually();
     }
 
-    @Override
     public void makeCoffee() {
-        System.out.println("Заливается горячяя вода");
-        System.out.println("Добавляются зернышка кофе ");
-        System.out.println("Все перемешивается");
-        System.out.println("");
-    }
-    @Override
-    public void eventually() {
+        EspressoCoffee();
         System.out.println("Ваш заказ Эсперессо");
-        System.out.println("В нем " + hotWaterForEspresso + " мл. горячей воды");
-        System.out.println(groundCoffeBeansForEspresso + " г. молотого зернышка кофе");
+        System.out.println("В нем " + HOT_WATER_FOR_ESPRESSO_IN_ML+ " мл. горячей воды");
+        System.out.println(GROUND_COFFEE_BEANS_FOR_ESPRESSO_IN_GR + " г. молотого зернышка кофе");
+        System.out.println("");
     }
 }

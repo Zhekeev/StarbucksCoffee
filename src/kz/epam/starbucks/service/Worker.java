@@ -10,10 +10,10 @@ public class Worker {
         System.out.println("Добро пожаловать в Starbucks");
         System.out.println("Введите ваше имя: ");
         String nameOfClient=scanner.nextLine();
-        scanner.close();
         client.setNameForClient(nameOfClient);
         makeCoffee();
         System.out.println("Ваше кофе готово " + client.getClientName());
+        scanner.close();
     }
     public void makeCoffee(){
         CoffeeSelection coffeSelection = new CoffeeSelection();
