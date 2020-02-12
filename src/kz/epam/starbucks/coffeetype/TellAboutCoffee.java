@@ -1,6 +1,7 @@
 package kz.epam.starbucks.coffeetype;
 
-    public interface Coffee{
+    public interface TellAboutCoffee {
         void tellAboutCoffee();
     }
+
 

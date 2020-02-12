@@ -24,17 +24,17 @@ public class Selection {
         int selectedNumber = scanner.nextInt();
             switch (selectedNumber) {
                 case 1 :
-                    espresso.EspressoCoffee();
+                    System.out.println("Ваш заказ Эсперессо");
                     coffeePayment.forPayment(espresso.getEspressoPrice());
                     coffeeMachine.makeCoffee(1);
                     break;
                 case 2:
-                    americano.AmericanoCoffee();
+                    System.out.println("Ваш заказ Американо");
                     coffeePayment.forPayment(americano.getAmericanoPrice());
                     coffeeMachine.makeCoffee(2);
                     break;
                 case 3:
-                    cappuccino.CappuccinoCoffee();
+                    System.out.println("Ваш заказ Капучино");
                     coffeePayment.forPayment(cappuccino.getCappucinoPrice());
                     coffeeMachine.makeCoffee(3);
                     break;
@@ -42,5 +42,6 @@ public class Selection {
                 System.out.println("Что то пошло не так, выберите из 3-х предложанных");
                 coffeeSelection();
         }
+        scanner.close();
     }
 }

@@ -12,13 +12,13 @@ public class  CoffeeMachine {
     public void makeCoffee(int coffeSelectionNumber) {
         switch (coffeSelectionNumber) {
             case 1:
-                espresso.makeCoffee();
+                espresso.EspressoCoffee();
                 break;
             case 2:
-                americano.makeCoffee();
+                americano.AmericanoCoffee();
                 break;
             case 3:
-                cappuccino.makeCoffee();
+                cappuccino.CappuccinoCoffee();
                 break;
         }
     }
