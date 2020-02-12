@@ -11,7 +11,6 @@ public class Espresso implements Coffee {
     }
 
     public void makeCoffee() {
-        EspressoCoffee();
         System.out.println("Ваш заказ Эсперессо");
         tellAboutCoffee();
         System.out.println("");

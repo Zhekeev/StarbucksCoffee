@@ -24,19 +24,16 @@ public class Selection {
         int selectedNumber = scanner.nextInt();
             switch (selectedNumber) {
                 case 1 :
-                    Espresso espresso = new Espresso();
                     espresso.EspressoCoffee();
                     coffeePayment.forPayment(espresso.getEspressoPrice());
                     coffeeMachine.makeCoffee(1);
                     break;
                 case 2:
-                    Americano americano = new Americano();
                     americano.AmericanoCoffee();
                     coffeePayment.forPayment(americano.getAmericanoPrice());
                     coffeeMachine.makeCoffee(2);
                     break;
                 case 3:
-                    Cappuccino cappuccino =new Cappuccino();
                     cappuccino.CappuccinoCoffee();
                     coffeePayment.forPayment(cappuccino.getCappucinoPrice());
                     coffeeMachine.makeCoffee(3);
