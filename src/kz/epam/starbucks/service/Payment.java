@@ -2,7 +2,7 @@ package kz.epam.starbucks.service;
 
 import java.util.Scanner;
 
-public class CoffeePayment {
+public class Payment {
     private Scanner scanner = new Scanner(System.in);
     private int debt;
 

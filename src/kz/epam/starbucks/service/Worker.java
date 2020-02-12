@@ -1,8 +1,10 @@
 package kz.epam.starbucks.service;
 
+import kz.epam.starbucks.coffeetype.Selection;
+
 import java.util.Scanner;
 
-public class Worker {
+public class Worker  {
     private Scanner scanner = new Scanner(System.in);
     private Client client = new Client();
 
@@ -16,7 +18,7 @@ public class Worker {
         scanner.close();
     }
     public void makeCoffee(){
-        CoffeeSelection coffeSelection = new CoffeeSelection();
+        Selection coffeSelection = new Selection();
         coffeSelection.choiceOfCoffeeTypes();
         coffeSelection.coffeeSelection();
     }

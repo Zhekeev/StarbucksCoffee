@@ -1,12 +1,12 @@
-package kz.epam.starbucks.service;
+package kz.epam.starbucks.coffeetype;
 
-import kz.epam.starbucks.coffeetype.Americano;
-import kz.epam.starbucks.coffeetype.Cappuccino;
-import kz.epam.starbucks.coffeetype.Espresso;
+import kz.epam.starbucks.service.CoffeeMachine;
+import kz.epam.starbucks.service.Payment;
+
 import java.util.Scanner;
 
-public class CoffeeSelection {
-    private CoffeePayment coffeePayment = new CoffeePayment();
+public class Selection {
+    private Payment coffeePayment = new Payment();
     private CoffeeMachine coffeeMachine = new CoffeeMachine();
     private Espresso espresso = new Espresso();
     private Cappuccino cappuccino = new Cappuccino();
@@ -15,9 +15,9 @@ public class CoffeeSelection {
 
     public void choiceOfCoffeeTypes() {
         System.out.println("Выберите кофе");
-        System.out.println("1. Эспрессо - " + espresso.ESPRESSO_PRICE_IN_TENGE + " тг.");
-        System.out.println("2. Американо - " + cappuccino.CAPPUCINO_PRICE_IN_TENGE + " тг." );
-        System.out.println("3. Капучино - " + americano.AMERICANO_PRICE_IN_TENGE + " тг.");
+        System.out.println("1. Эспрессо - " + espresso.getEspressoPrice() + " тг.");
+        System.out.println("2. Американо - " + americano.getAmericanoPrice()  + " тг." );
+        System.out.println("3. Капучино - " + cappuccino.getCappucinoPrice() + " тг.");
     }
 
     public void coffeeSelection() {
@@ -26,19 +26,19 @@ public class CoffeeSelection {
                 case 1 :
                     Espresso espresso = new Espresso();
                     espresso.EspressoCoffee();
-                    coffeePayment.forPayment(espresso.ESPRESSO_PRICE_IN_TENGE);
+                    coffeePayment.forPayment(espresso.getEspressoPrice());
                     coffeeMachine.makeCoffee(1);
                     break;
                 case 2:
                     Americano americano = new Americano();
                     americano.AmericanoCoffee();
-                    coffeePayment.forPayment(americano.AMERICANO_PRICE_IN_TENGE);
+                    coffeePayment.forPayment(americano.getAmericanoPrice());
                     coffeeMachine.makeCoffee(2);
                     break;
                 case 3:
                     Cappuccino cappuccino =new Cappuccino();
                     cappuccino.CappuccinoCoffee();
-                    coffeePayment.forPayment(cappuccino.CAPPUCINO_PRICE_IN_TENGE);
+                    coffeePayment.forPayment(cappuccino.getCappucinoPrice());
                     coffeeMachine.makeCoffee(3);
                     break;
                 default:
