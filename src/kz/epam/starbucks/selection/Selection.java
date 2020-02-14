@@ -1,5 +1,8 @@
-package kz.epam.starbucks.coffeetype;
+package kz.epam.starbucks.selection;
 
+import kz.epam.starbucks.coffeetype.Americano;
+import kz.epam.starbucks.coffeetype.Cappuccino;
+import kz.epam.starbucks.coffeetype.Espresso;
 import kz.epam.starbucks.service.CoffeeMachine;
 import kz.epam.starbucks.service.Payment;
 
@@ -18,6 +21,7 @@ public class Selection {
         System.out.println("1. Эспрессо - " + espresso.getEspressoPrice() + " тг.");
         System.out.println("2. Американо - " + americano.getAmericanoPrice()  + " тг." );
         System.out.println("3. Капучино - " + cappuccino.getCappucinoPrice() + " тг.");
+        coffeeSelection();
     }
 
     public void coffeeSelection() {

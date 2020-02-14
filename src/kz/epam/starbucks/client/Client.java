@@ -1,4 +1,4 @@
-package kz.epam.starbucks.service;
+package kz.epam.starbucks.client;
 
 
 public class Client {
