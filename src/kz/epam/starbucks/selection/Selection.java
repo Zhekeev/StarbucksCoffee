@@ -9,6 +9,7 @@ import kz.epam.starbucks.service.Payment;
 import java.util.Scanner;
 
 public class Selection {
+
     private Payment coffeePayment = new Payment();
     private CoffeeMachine coffeeMachine = new CoffeeMachine();
     private Espresso espresso = new Espresso();
@@ -16,7 +17,12 @@ public class Selection {
     private Americano americano = new Americano();
     private Scanner scanner = new Scanner(System.in);
 
+    private final int espressoNumber = 1;
+    private final int americanoNumber = 2;
+    private final int cappuccinoNumber = 3;
+
     public void choiceOfCoffeeTypes() {
+
         System.out.println("Выберите кофе");
         System.out.println("1. Эспрессо - " + espresso.getEspressoPrice() + " тг.");
         System.out.println("2. Американо - " + americano.getAmericanoPrice()  + " тг." );
@@ -24,24 +30,30 @@ public class Selection {
         coffeeSelection();
     }
 
-    public void coffeeSelection() {
+    private void coffeeSelection() {
+
         int selectedNumber = scanner.nextInt();
+
             switch (selectedNumber) {
-                case 1 :
+
+                case espressoNumber:
                     System.out.println("Ваш заказ Эсперессо");
-                    coffeePayment.forPayment(espresso.getEspressoPrice());
-                    coffeeMachine.makeCoffee(1);
+                    coffeePayment.makePayment(espresso.getEspressoPrice());
+                    coffeeMachine.makeCoffee(espressoNumber);
                     break;
-                case 2:
+
+                case americanoNumber:
                     System.out.println("Ваш заказ Американо");
-                    coffeePayment.forPayment(americano.getAmericanoPrice());
-                    coffeeMachine.makeCoffee(2);
+                    coffeePayment.makePayment(americano.getAmericanoPrice());
+                    coffeeMachine.makeCoffee(americanoNumber);
                     break;
-                case 3:
+
+                case cappuccinoNumber:
                     System.out.println("Ваш заказ Капучино");
-                    coffeePayment.forPayment(cappuccino.getCappucinoPrice());
-                    coffeeMachine.makeCoffee(3);
+                    coffeePayment.makePayment(cappuccino.getCappucinoPrice());
+                    coffeeMachine.makeCoffee(cappuccinoNumber);
                     break;
+
                 default:
                 System.out.println("Что то пошло не так, выберите из 3-х предложанных");
                 coffeeSelection();

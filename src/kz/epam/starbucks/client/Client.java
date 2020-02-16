@@ -2,6 +2,7 @@ package kz.epam.starbucks.client;
 
 
 public class Client {
+
     private String nameOfClient;
 
     public void setNameForClient(String name){
