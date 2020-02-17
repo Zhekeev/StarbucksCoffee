@@ -1,4 +1,4 @@
-package kz.epam.starbucks.runner;
+package kz.epam.starbucks;
 
 import kz.epam.starbucks.service.Worker;
 
