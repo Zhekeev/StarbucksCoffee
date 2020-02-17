@@ -11,7 +11,6 @@ public class Worker  {
     private Client client = new Client();
 
     public void toWelcome(){
-
         System.out.println("Добро пожаловать в Starbucks");
         System.out.println("Введите ваше имя: ");
         String nameOfClient=scanner.nextLine();
@@ -22,7 +21,6 @@ public class Worker  {
     }
 
     private void makeCoffee(){
-
         Selection coffeSelection = new Selection();
         coffeSelection.choiceOfCoffeeTypes();
     }
