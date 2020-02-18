@@ -9,7 +9,7 @@ public class Client {
         this.nameOfClient=name;
     }
 
-    public String getClientName(){
+    public String getClientName() {
         return nameOfClient;
     }
 }
