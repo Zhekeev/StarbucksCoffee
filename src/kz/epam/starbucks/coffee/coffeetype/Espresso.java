@@ -14,7 +14,6 @@ public class Espresso implements Coffee {
     }
 
     public int getEspressoPrice() {
-
         return ESPRESSO_PRICE_IN_TENGE;
     }
 }
