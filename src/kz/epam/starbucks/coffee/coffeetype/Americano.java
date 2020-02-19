@@ -13,6 +13,7 @@ public class Americano implements Coffee {
     }
 
     public int getAmericanoPrice(){
+
         return AMERICANO_PRICE_IN_TENGE;
     }
 }

@@ -3,7 +3,7 @@ package kz.epam.starbucks.coffee.coffeetype;
 import kz.epam.starbucks.coffee.Coffee;
 
 public class Cappuccino implements Coffee {
-    private final int CAPPUCINO_PRICE_IN_TENGE = 1500;
+    private final int CAPPUCCINO_PRICE_IN_TENGE = 1500;
 
     @Override
     public void getCoffeeType() {
@@ -11,7 +11,7 @@ public class Cappuccino implements Coffee {
         System.out.println("");
     }
 
-    public int getCappucinoPrice() {
-        return CAPPUCINO_PRICE_IN_TENGE;
+    public int getCappuccinoPrice() {
+        return CAPPUCCINO_PRICE_IN_TENGE;
     }
 }

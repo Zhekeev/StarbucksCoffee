@@ -20,7 +20,7 @@ public class SelectionForPayment {
                 coffeePayment.makePayment(americano.getAmericanoPrice());
                 break;
             case 3:
-                coffeePayment.makePayment(cappuccino.getCappucinoPrice());
+                coffeePayment.makePayment(cappuccino.getCappuccinoPrice());
         }
     }
 }
